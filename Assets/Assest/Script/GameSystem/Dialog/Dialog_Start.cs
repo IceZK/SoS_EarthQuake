@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 
-public class NPC : MonoBehaviour
+public class Dialog_Start : MonoBehaviour
 {
-    // Start is called before the first frame update
     public NPCConversation Conversation;
     void Start()
     {
