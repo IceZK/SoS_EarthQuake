@@ -8,11 +8,16 @@ public class GameManager : MonoBehaviour
 
     //base stat
     [Header("GameSetting")]
-    public static float timer;
+    public static float timer = 350;
     public static bool is_gameover;
     public static bool is_escape;
     public static bool is_people;
     public static bool is_alive;
+    public static bool is_dialog;
+
+    [Header("Player Position")]
+    public static bool is_down;
+    public static bool is_up;
 
     [Header("Player stat")]
     public static int health;

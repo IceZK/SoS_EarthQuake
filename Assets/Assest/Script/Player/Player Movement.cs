@@ -21,16 +21,13 @@ public class PlayerMovement : MonoBehaviour
         Vector2 MoveDirection = PlayerAction.action.ReadValue<Vector2>();
         transform.Translate(MoveDirection*speed*Time.deltaTime);
 
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+       
 
-        //rb.velocity = new Vector2(moveHorizontal * speed, moveVertical * speed);
-
-        if(moveHorizontal < 0)
+        if(MoveDirection.x < 0)
         {
             sr.flipX = true;
         }
-        else if(moveHorizontal > 0)
+        else if(MoveDirection.x > 0)
         {
             sr.flipX = false;
         }
