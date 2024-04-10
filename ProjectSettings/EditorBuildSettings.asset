@@ -6,22 +6,40 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Assest/Scene/in-game/Main menu.unity
+    path: Assets/Assest/Scene/in-game/MainMenu.unity
     guid: fdd8512735fddfc40a5b27d2ac193015
   - enabled: 1
+    path: Assets/Assest/Scene/Win or Lose/DEMO/Win.unity
+    guid: 0e514f590749ecd4ca3a0d971859f5a9
+  - enabled: 1
+    path: Assets/Assest/Scene/Win or Lose/DEMO/Lose.unity
+    guid: 63083b8bbf9d50a42bc87a2014933574
+  - enabled: 1
     path: Assets/Assest/Scene/in-game/Level 1.unity
-    guid: 90ff7cc1d81e0cc4f9e1e6a6143fb4b8
+    guid: fd4571ecc916fa446a7127c5cbf5a7c2
   - enabled: 1
     path: Assets/Assest/Scene/in-game/Level 2.unity
-    guid: 8a77b3859db2b904ca628190a8a464cc
+    guid: e71e1d0fa9366c2489bb2ce0d16edc18
   - enabled: 1
     path: Assets/Assest/Scene/in-game/Level 3.unity
-    guid: d271158576c16e8478ff3967c8f8fcb2
+    guid: 009cee64c1926fd4b9210dccfd1a8d73
   - enabled: 1
     path: Assets/Assest/Scene/in-game/Level 4.unity
-    guid: b05a75871c616ee4ba1eae3aa3ba9b66
+    guid: ea73cdf8fd88bea4b9fb684d82d78c58
   - enabled: 1
     path: Assets/Assest/Scene/in-game/Level 5.unity
-    guid: a0bcd719b698b97428f4dc82d6a73cbf
+    guid: 5877588717dfb56419c27defb3eeb9b3
+  - enabled: 1
+    path: Assets/Assest/Scene/in-game/Level 6.unity
+    guid: 85c2a12a52fa0214082e90b729fff02d
+  - enabled: 1
+    path: Assets/Assest/Scene/in-game/Level 7.unity
+    guid: ce741c0acdda27843960e02c2326dac9
+  - enabled: 1
+    path: Assets/Assest/Scene/in-game/Level 8.unity
+    guid: d10d01afdde37494ea4afca118a49d5d
+  - enabled: 1
+    path: Assets/Assest/Scene/in-game/Level 9.unity
+    guid: d0187f2c19316374e829be0e1eca83e3
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 6a4283d230bae134a8d79244454f0d40, type: 2}

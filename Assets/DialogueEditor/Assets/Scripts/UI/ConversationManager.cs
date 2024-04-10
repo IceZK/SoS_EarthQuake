@@ -145,6 +145,7 @@ namespace DialogueEditor
 
         public void StartConversation(NPCConversation conversation)
         {
+            GameManager.is_dialog = true;
             m_conversation = conversation.Deserialize();
             if (OnConversationStarted != null)
                 OnConversationStarted.Invoke();
@@ -160,6 +161,7 @@ namespace DialogueEditor
 
             if (OnConversationEnded != null)
                 OnConversationEnded.Invoke();
+            GameManager.is_dialog = false;
         }
 
         public void SelectNextOption()

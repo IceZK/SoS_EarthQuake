@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
     //base stat
     [Header("GameSetting")]
     public static float timer = 350;
+    public static bool is_start;
     public static bool is_gameover;
     public static bool is_escape;
     public static bool is_people;
@@ -19,9 +21,10 @@ public class GameManager : MonoBehaviour
     public static bool is_down;
     public static bool is_up;
 
-    [Header("Player stat")]
-    public static int health;
-    public static int maxHealth;
+    
+
+    
+    
     private void Awake()
     {
         // if the singleton hasn't been initialized yet
@@ -37,6 +40,18 @@ public class GameManager : MonoBehaviour
 
 
         }
+    }
+    
+   
+    public void Reset()
+    {
+        is_dialog = false;
+        is_down = false;
+        is_up = false;
+        is_gameover = false;
+        is_escape = false;
+        is_people = false;
+        is_start = false;
     }
 
 }

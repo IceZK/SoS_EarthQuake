@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameplayeManager : MonoBehaviour
@@ -12,6 +14,10 @@ public class GameplayeManager : MonoBehaviour
     public GameObject player;
     public GameObject down_spawn;
     public GameObject up_spawn;
+    public GameObject ui_control;
+    public UnityEvent player_event;
+    public UnityEvent player_event2;
+    
 
     // Use this for initialization
     private void Awake()
@@ -19,9 +25,14 @@ public class GameplayeManager : MonoBehaviour
         player = GameObject.Find("Player");
         down_spawn = GameObject.Find("LeftStairs");
         up_spawn = GameObject.Find("RightStairs");
+        ui_control = GameObject.Find("Control-Panel");
+        
+
+
     }
     void Start()
     {
+        
         //spawn player different position in the same scene but not same Entrust
         // teleport portal
         if (GameManager.is_up == true)
@@ -36,6 +47,8 @@ public class GameplayeManager : MonoBehaviour
         }
         scene = SceneManager.GetActiveScene();
         Debug.Log("Scene Name" +  scene.name);
+
+        
         
     }
 
@@ -48,13 +61,22 @@ public class GameplayeManager : MonoBehaviour
         GameOver1(GameManager.timer);
 
 
-        if (scene.name == "Level1")
+        if (scene.name == "Level 1")
         {
             if(GameManager.timer <= 60)
             {
                 //spawn object to block player
                 //Instantiate(objectToSpawn, position);
             }
+        }
+
+        if(GameManager.is_dialog == true)
+        {
+            ui_control.SetActive(false);
+        }
+        else if (GameManager.is_dialog == false)
+        {
+            ui_control.SetActive(true);
         }
         
         
@@ -75,7 +97,7 @@ public class GameplayeManager : MonoBehaviour
         float minutes = Mathf.FloorToInt(currenttime / 60);
         float seconds = Mathf.FloorToInt(currenttime % 60);
 
-        text_time.text = minutes + ":" + seconds;
+        text_time.text = string.Format("{0:00} : {1:00}", minutes, seconds);
     }
 
     void LevelCount(string scene)
