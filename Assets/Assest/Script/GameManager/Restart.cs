@@ -10,8 +10,7 @@ public class Restart : MonoBehaviour
     {
         GameManager.timer = time;
         GameManager.is_dialog = false;
-        GameManager.is_down = false;
-        GameManager.is_up = false;
+        
         GameManager.is_gameover = false;
         GameManager.is_escape = false;
         GameManager.is_people = false;

@@ -16,30 +16,15 @@ EditorBuildSettings:
     guid: 63083b8bbf9d50a42bc87a2014933574
   - enabled: 1
     path: Assets/Assest/Scene/in-game/Level 1.unity
-    guid: fd4571ecc916fa446a7127c5cbf5a7c2
+    guid: 30dc0f5e873a37f499d1419783eb5aa7
   - enabled: 1
     path: Assets/Assest/Scene/in-game/Level 2.unity
-    guid: e71e1d0fa9366c2489bb2ce0d16edc18
+    guid: 612e16c90a0096849910c9ff6a0a72ca
   - enabled: 1
     path: Assets/Assest/Scene/in-game/Level 3.unity
-    guid: 009cee64c1926fd4b9210dccfd1a8d73
-  - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 4.unity
-    guid: ea73cdf8fd88bea4b9fb684d82d78c58
-  - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 5.unity
-    guid: 5877588717dfb56419c27defb3eeb9b3
-  - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 6.unity
-    guid: 85c2a12a52fa0214082e90b729fff02d
-  - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 7.unity
-    guid: ce741c0acdda27843960e02c2326dac9
-  - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 8.unity
-    guid: d10d01afdde37494ea4afca118a49d5d
-  - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 9.unity
-    guid: d0187f2c19316374e829be0e1eca83e3
+    guid: 2c1ce248f1d5ca74c9e8beb0000c70df
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 186deb640023dc7489ff881a52c8891a, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: b92c2b0acd88064439a4bbb4a1a2d9c8, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 72f31fc004983184ba835b88d86e115d, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 6a4283d230bae134a8d79244454f0d40, type: 2}

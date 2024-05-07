@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -9,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     //base stat
     [Header("GameSetting")]
-    public static float timer = 350;
+    public static float timer = 360;
     public static bool is_start;
     public static bool is_gameover;
     public static bool is_escape;
@@ -17,9 +16,7 @@ public class GameManager : MonoBehaviour
     public static bool is_alive;
     public static bool is_dialog;
 
-    [Header("Player Position")]
-    public static bool is_down;
-    public static bool is_up;
+    
 
     
 
@@ -46,12 +43,12 @@ public class GameManager : MonoBehaviour
     public void Reset()
     {
         is_dialog = false;
-        is_down = false;
-        is_up = false;
         is_gameover = false;
         is_escape = false;
         is_people = false;
         is_start = false;
+        timer += (360f + Time.deltaTime);
+        
     }
 
 }

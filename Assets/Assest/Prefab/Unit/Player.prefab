@@ -209,8 +209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eea6365c6e89f3847b87353fbf1157d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  sr: {fileID: 1536023182670414646}
+  speed: 2.5
+  animator: {fileID: 0}
   PlayerAction: {fileID: 2316343352804990643, guid: fd87751f63db11b4ca797123482352be, type: 3}
 --- !u!114 &8510191472101943176
 MonoBehaviour:
@@ -219,11 +219,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3723946752793370091}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4960a2b12a39afb44884139f9571aecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  b_interact: {fileID: 0}
 --- !u!61 &9194784017730705517
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -256,7 +257,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0007194206, y: 0.00006984919}
+  m_Offset: {x: -0.015995026, y: -0.013710022}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -267,7 +268,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.12629007, y: 0.16339107}
+  m_Size: {x: 0.44703674, y: 1.02742}
   m_EdgeRadius: 0
 --- !u!50 &4560184058979199739
 Rigidbody2D:
@@ -323,7 +324,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: New action map
+  m_DefaultActionMap: Player Controller
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!95 &6428491016861344298
@@ -334,7 +335,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3723946752793370091}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d23a2c1449b21874c82b15004797ca01, type: 2}
   m_CullingMode: 0

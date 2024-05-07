@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: d253a8698bf8299448ff05b99062ba57
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 0
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 32
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 1
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 4
+    generateModelPrefab: 0
+    generateAnimationClips: 0
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 1
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 4
+    generateModelPrefab: 0
+    generateAnimationClips: 0
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638490452231157316
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Doctor 32 walk_Frame_0
+    originalName: 
+    pivot: {x: -0.17391305, y: 1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 90
+      width: 23
+      height: 34
+    spriteID: 92c4d3c9855bf0d4ba38c985f48cbc71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 90}
+  - name: Doctor 32 walk_Frame_1
+    originalName: 
+    pivot: {x: -0.16666667, y: 0.9714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 24
+      height: 35
+    spriteID: 02a74af19d752324fafbd0be28059a74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Doctor 32 walk_Frame_2
+    originalName: 
+    pivot: {x: -0.21739131, y: 1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 4
+      width: 23
+      height: 34
+    spriteID: 778b1c770645b1a4681812e4fb0865ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 4}
+  - name: Doctor 32 walk_Frame_3
+    originalName: 
+    pivot: {x: -0.22727273, y: 1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 46
+      width: 22
+      height: 34
+    spriteID: 537deb061862c7e40b2a4519c68ef059
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 46}
+  - name: Doctor 32 walk_Frame_4
+    originalName: 
+    pivot: {x: -0.16666667, y: 0.9714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 47
+      width: 24
+      height: 35
+    spriteID: d596779141c310c40b1195779a27ebd3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 47}
+  - name: Doctor 32 walk_Frame_5
+    originalName: 
+    pivot: {x: -0.22727273, y: 1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 36
+      y: 88
+      width: 22
+      height: 34
+    spriteID: 0a0ee981fbcc27d4a99739e31d7dec51
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 36, y: 88}
+  - name: Doctor 32 walk_Frame_6
+    originalName: 
+    pivot: {x: -0.25, y: 1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 4
+      width: 20
+      height: 34
+    spriteID: 232cc2fcea8449c4687ec23597c02df5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 4}
+  - name: Doctor 32 walk_Frame_7
+    originalName: 
+    pivot: {x: -0.47058824, y: 0.9714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 46
+      width: 17
+      height: 35
+    spriteID: e283326380d81594c8cd0e32f390d437
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 46}
+  - name: Doctor 32 walk_Frame_8
+    originalName: 
+    pivot: {x: -0.25, y: 1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 46
+      width: 20
+      height: 34
+    spriteID: e8ed1b0a2bcc0a340b4128077a8e4303
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 46}
+  - name: Doctor 32 walk_Frame_9
+    originalName: 
+    pivot: {x: -0.35, y: 1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 67
+      y: 88
+      width: 20
+      height: 34
+    spriteID: 8a85b73f8e315374586c9471939c16f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 67, y: 88}
+  - name: Doctor 32 walk_Frame_10
+    originalName: 
+    pivot: {x: -0.4117647, y: 0.9714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 89
+      width: 17
+      height: 35
+    spriteID: 48cd48d93b1f0e2418b2774a9f6f9c03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 89}
+  - name: Doctor 32 walk_Frame_11
+    originalName: 
+    pivot: {x: -0.35, y: 1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 95
+      y: 4
+      width: 20
+      height: 34
+    spriteID: 5fd9a4ee0a322a9469c2118a1b41d94b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 95, y: 4}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 819318921
+    name: Doctor 32 walk
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Doctor 32 walk_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 6
+        y: 0
+        width: 19
+        height: 30
+      spriteId: 92c4d3c9855bf0d4ba38c985f48cbc71
+    - name: Doctor 32 walk_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 6
+        y: 0
+        width: 20
+        height: 31
+      spriteId: 02a74af19d752324fafbd0be28059a74
+    - name: Doctor 32 walk_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 7
+        y: 0
+        width: 19
+        height: 30
+      spriteId: 778b1c770645b1a4681812e4fb0865ef
+    - name: Doctor 32 walk_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 7
+        y: 0
+        width: 18
+        height: 30
+      spriteId: 537deb061862c7e40b2a4519c68ef059
+    - name: Doctor 32 walk_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 6
+        y: 0
+        width: 20
+        height: 31
+      spriteId: d596779141c310c40b1195779a27ebd3
+    - name: Doctor 32 walk_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 7
+        y: 0
+        width: 18
+        height: 30
+      spriteId: 0a0ee981fbcc27d4a99739e31d7dec51
+    - name: Doctor 32 walk_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 7
+        y: 0
+        width: 16
+        height: 30
+      spriteId: 232cc2fcea8449c4687ec23597c02df5
+    - name: Doctor 32 walk_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 10
+        y: 0
+        width: 13
+        height: 31
+      spriteId: e283326380d81594c8cd0e32f390d437
+    - name: Doctor 32 walk_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 7
+        y: 0
+        width: 16
+        height: 30
+      spriteId: e8ed1b0a2bcc0a340b4128077a8e4303
+    - name: Doctor 32 walk_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 9
+        y: 0
+        width: 16
+        height: 30
+      spriteId: 8a85b73f8e315374586c9471939c16f0
+    - name: Doctor 32 walk_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 9
+        y: 0
+        width: 13
+        height: 31
+      spriteId: 48cd48d93b1f0e2418b2774a9f6f9c03
+    - name: Doctor 32 walk_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 9
+        y: 0
+        width: 16
+        height: 30
+      spriteId: 5fd9a4ee0a322a9469c2118a1b41d94b
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}

@@ -7,12 +7,13 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D rb;
     public float speed;
-    public SpriteRenderer sr;
+    public Animator animator;
+    
     public InputActionReference PlayerAction;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
+       animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,17 +21,19 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 MoveDirection = PlayerAction.action.ReadValue<Vector2>();
         transform.Translate(MoveDirection*speed*Time.deltaTime);
-
-       
-
-        if(MoveDirection.x < 0)
+        if (MoveDirection != Vector2.zero)
         {
-            sr.flipX = true;
+            animator.SetFloat("MoveX", MoveDirection.x);
+            animator.SetFloat("MoveY", MoveDirection.y);
         }
-        else if(MoveDirection.x > 0)
+        else
         {
-            sr.flipX = false;
+            animator.SetFloat("MoveX", 0f);
+            animator.SetFloat("MoveY", 0f);
         }
         
+
+
+
     }
 }

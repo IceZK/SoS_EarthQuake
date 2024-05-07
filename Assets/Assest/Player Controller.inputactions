@@ -2,7 +2,7 @@
     "name": "Player Controller",
     "maps": [
         {
-            "name": "New action map",
+            "name": "Player Controller",
             "id": "5057bf0e-0d60-4502-bb19-fa3a5ad373b6",
             "actions": [
                 {
