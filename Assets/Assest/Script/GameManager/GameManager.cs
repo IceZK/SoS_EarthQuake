@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
         is_escape = false;
         is_people = false;
         is_start = false;
-        timer += (360f + Time.deltaTime);
+        timer = 360f;
         
     }
 

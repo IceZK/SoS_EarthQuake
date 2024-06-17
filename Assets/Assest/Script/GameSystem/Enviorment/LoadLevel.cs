@@ -12,21 +12,8 @@ public class LoadLevel : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            /*if(this.gameObject.name == "RightStairs")
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-                GameManager.is_down = true;
-            }
-            else
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-                GameManager.is_up = true;
-            }
-            */
+            
             SceneManager.LoadScene(sceneName);
-
-
-
         }
     }
 }
