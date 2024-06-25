@@ -1,7 +1,6 @@
 using DialogueEditor;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class PlayerInteract : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -10,6 +9,15 @@ public class PlayerInteract : MonoBehaviour
     public Button b_interact;
     public NPCConversation Conversation;
     public bool CanTalk = false;
+    
+    public GameObject Cam;
+
+    public AudioSource damage_Sfx;
+    public AudioClip damage_clip;
+    public void Start()
+    {
+        
+    }
 
     public void Update()
     {
@@ -42,13 +50,25 @@ public class PlayerInteract : MonoBehaviour
                 Debug.Log("Move");
 
             }
-            else
+            else if (collision.gameObject.tag == "Damage")
             {
-                
-                Debug.Log("Null");
+                GameManager.timer -= 10f;
+                damage_Sfx.clip = damage_clip;
+                damage_Sfx.Play();
             }
+          
+            
         }
         
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Vibrate")
+        {
+            Handheld.Vibrate();
+            CameraShake.instance.ShakeCam(5f, 1f);
+            Destroy(collision.gameObject);
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {

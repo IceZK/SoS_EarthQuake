@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameplayeManager : MonoBehaviour
 {
@@ -15,7 +16,9 @@ public class GameplayeManager : MonoBehaviour
     public GameObject ui_control;
     public UnityEvent player_event;
     public UnityEvent player_event2;
-    
+
+    public GameObject Music;
+    AudioManager audio_manager;
 
     // Use this for initialization
     private void Awake()
@@ -32,8 +35,8 @@ public class GameplayeManager : MonoBehaviour
         
         
         
-        scene = SceneManager.GetActiveScene();
-        Debug.Log("Scene Name" +  scene.name);
+        scene = SceneManager.GetActiveScene(); 
+
 
         
         
@@ -42,12 +45,22 @@ public class GameplayeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Music = GameObject.Find("AudioManager");
+        audio_manager = Music.GetComponent<AudioManager>();
+        if (audio_manager.BGM_Music.clip != audio_manager.BGM_Gameplay)
+        {
+            audio_manager.ChangeMusic(audio_manager.BGM_Gameplay);
+        }
+
+
+
         TimerCount(GameManager.timer);
+        
+        
         LevelCount(scene.name);
         GameOver1(GameManager.timer);
 
-
+        //Level text
         if (scene.name == "Level 1")
         {
             if(GameManager.timer <= 60)
@@ -57,6 +70,7 @@ public class GameplayeManager : MonoBehaviour
             }
         }
 
+        //Hide Ui when Dialoag popup
         if(GameManager.is_dialog == true)
         {
             ui_control.SetActive(false);
@@ -66,6 +80,7 @@ public class GameplayeManager : MonoBehaviour
             ui_control.SetActive(true);
         }
         
+       
         
 
      }
@@ -73,13 +88,18 @@ public class GameplayeManager : MonoBehaviour
     {
         if (currenttime <= 0.0f)
         {
-            SceneManager.LoadScene("Lose", LoadSceneMode.Single);
+            SceneManager.LoadScene("GameOver 1", LoadSceneMode.Single);
         }
     }
     void TimerCount(float currenttime)
     {
-        if (GameManager.is_dialog == false)
-            GameManager.timer -= Time.deltaTime;
+        if (GameManager.is_pause == false)
+        {
+            if (GameManager.is_dialog == false)
+                GameManager.timer -= Time.deltaTime;
+        }
+            
+
 
         float minutes = Mathf.FloorToInt(currenttime / 60);
         float seconds = Mathf.FloorToInt(currenttime % 60);

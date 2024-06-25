@@ -6,8 +6,7 @@ using UnityEngine;
 public class PlayerDialog : MonoBehaviour
 {
     public NPCConversation Conversation1;
-    public NPCConversation Conversation2;
-    public NPCConversation Conversation3;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,12 +18,14 @@ public class PlayerDialog : MonoBehaviour
     {
         if(GameManager.is_start == false)
         {
-            GameManager.is_start = true;
+           
             Dialog(Conversation1);
+            GameManager.is_start = true;
         }
     }
     void Dialog(NPCConversation Conversation) 
     {
         ConversationManager.Instance.StartConversation(Conversation);
+        
     }
 }

@@ -15,13 +15,15 @@ public class GameManager : MonoBehaviour
     public static bool is_people;
     public static bool is_alive;
     public static bool is_dialog;
+    public static bool is_pause;
+    public static bool is_text;
 
-    
 
-    
 
-    
-    
+
+
+
+
     private void Awake()
     {
         // if the singleton hasn't been initialized yet
@@ -40,15 +42,6 @@ public class GameManager : MonoBehaviour
     }
     
    
-    public void Reset()
-    {
-        is_dialog = false;
-        is_gameover = false;
-        is_escape = false;
-        is_people = false;
-        is_start = false;
-        timer = 360f;
-        
-    }
+    
 
 }

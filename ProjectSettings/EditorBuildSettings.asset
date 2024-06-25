@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Assest/Scene/in-game/MainMenu.unity
     guid: fdd8512735fddfc40a5b27d2ac193015
   - enabled: 1
+    path: Assets/Assest/Scene/in-game/Select Level.unity
+    guid: d23124f47f9985e45bb7840fb69cd96d
+  - enabled: 1
     path: Assets/Assest/Scene/Win or Lose/DEMO/Win.unity
     guid: 0e514f590749ecd4ca3a0d971859f5a9
   - enabled: 1
@@ -22,7 +25,46 @@ EditorBuildSettings:
     guid: 612e16c90a0096849910c9ff6a0a72ca
   - enabled: 1
     path: Assets/Assest/Scene/in-game/Level 3.unity
-    guid: 2c1ce248f1d5ca74c9e8beb0000c70df
+    guid: 555d1fceebc730c4aa6ff6e21d69bc1f
+  - enabled: 1
+    path: Assets/Assest/Scene/in-game/Level 4.unity
+    guid: cb3c53e8fee9bdd4a9208d9815a32d6c
+  - enabled: 1
+    path: Assets/Assest/Scene/in-game/Pause.unity
+    guid: a0eeb841468391d40a7e2346c42a6b0d
+  - enabled: 1
+    path: Assets/Assest/Scene/Cutscene/Helicopter_Cutsense.unity
+    guid: 81bf947078c67b747a350a374c5a8c46
+  - enabled: 1
+    path: Assets/Assest/Scene/Cutscene/Intro.unity
+    guid: 849198c4831a1f5459b0f1eb87cd326e
+  - enabled: 1
+    path: Assets/Assest/Scene/Cutscene/Story_Intro 1.unity
+    guid: cf2df86194f0d8545ae1168fb21ab447
+  - enabled: 1
+    path: Assets/Assest/Scene/Cutscene/Story_Intro 2.unity
+    guid: ed6a78969a302fd4287f3cc2d98d2161
+  - enabled: 1
+    path: Assets/Assest/Scene/Win or Lose/END1.unity
+    guid: 348a8b14c19cb174f887c0361ea34e2e
+  - enabled: 1
+    path: Assets/Assest/Scene/Win or Lose/END2.unity
+    guid: 3dfa713b20754cd458b7079aa12ca4d3
+  - enabled: 1
+    path: Assets/Assest/Scene/in-game/Tutorial 1.unity
+    guid: 632539b934b12064580abaeb58e2f129
+  - enabled: 1
+    path: Assets/Assest/Scene/in-game/Tutorial 2.unity
+    guid: 5dc8d452d74c01045a7f498b56636000
+  - enabled: 1
+    path: Assets/Assest/Scene/Win or Lose/GameOver/GameOver 1.unity
+    guid: b4b60d9d228388b41a131233e24876a2
+  - enabled: 1
+    path: Assets/Assest/Scene/Win or Lose/GameOver/GameOver 2.unity
+    guid: a9dd6d35dbc2907499d0e3598053c6c7
+  - enabled: 1
+    path: Assets/Assest/Scene/in-game/Option.unity
+    guid: c5dbe565199083c41a179277ec841811
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 186deb640023dc7489ff881a52c8891a, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: b92c2b0acd88064439a4bbb4a1a2d9c8, type: 2}

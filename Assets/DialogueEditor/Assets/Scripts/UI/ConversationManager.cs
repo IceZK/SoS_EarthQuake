@@ -342,6 +342,7 @@ namespace DialogueEditor
 
         private void ScrollingText_Update()
         {
+
             const float charactersPerSecond = 1500;
             float timePerChar = (60.0f / charactersPerSecond);
             timePerChar *= ScrollSpeed;
@@ -350,6 +351,11 @@ namespace DialogueEditor
 
             if (m_elapsedScrollTime > timePerChar)
             {
+                if(GameManager.is_text == false)
+                {
+                    GameManager.is_text = true;
+                }
+                GameManager.is_text = true;
                 m_elapsedScrollTime = 0f;
 
                 DialogueText.maxVisibleCharacters = m_scrollIndex;
@@ -358,6 +364,7 @@ namespace DialogueEditor
                 // Finished?
                 if (m_scrollIndex >= m_targetScrollTextCount)
                 {
+                    GameManager.is_text = false;
                     SetState(eState.TransitioningOptionsOn);
                 }
             }
