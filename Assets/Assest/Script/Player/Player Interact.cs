@@ -5,13 +5,15 @@ public class PlayerInteract : MonoBehaviour
 {
     // Start is called before the first frame update
 
-
+    [Header("Canvas Dialog")]
     public Button b_interact;
     public NPCConversation Conversation;
-    public bool CanTalk = false;
 
+    [Header("Bool")]
+    public bool CanTalk = false;
     public bool Key = false;
 
+    [Header("Cam Shake")]
     public GameObject Cam;
 
     [Header("Sound SFX")]
@@ -48,12 +50,7 @@ public class PlayerInteract : MonoBehaviour
                 Conversation = (NPCConversation)collision.gameObject.GetComponent<NPCConversation>();
                 
             }
-            else if (collision.gameObject.tag == "MoveObject")
-            {
-                b_interact.onClick.AddListener(MoveObject);
-                Debug.Log("Move");
-
-            }
+            
             else if (collision.gameObject.tag == "Damage")
             {
                 GameManager.timer -= 10f;
@@ -104,10 +101,7 @@ public class PlayerInteract : MonoBehaviour
     {
         ConversationManager.Instance.StartConversation(Conversation);
     }
-    public void MoveObject()
-    {
-
-    }
+    
 
    
 }
