@@ -15,38 +15,34 @@ public class ChangeAudio : MonoBehaviour
 
     public AudioClip sfx_win;
     public AudioClip sfx_lose;
+    private void Awake()
+    {
+        
+    }
     void Start()
     {
+        //Find singleton
         Music = GameObject.Find("AudioManager");
+        audio_manager = Music.GetComponent<AudioManager>();
         audio_source = GetComponent<AudioSource>();
 
+        //Change music by con
         if (win)
         {
             audio_source.clip = sfx_win;
             audio_source.Play();
-            if (audio_manager.BGM_Music.clip != audio_manager.BGM_Title)
-            {
-                audio_manager.ChangeMusic(audio_manager.BGM_Title);
-            }
+            audio_manager.ChangeMusic(audio_manager.BGM_Title);
+            
 
         }
         else
         {
             audio_source.clip = sfx_lose;
             audio_source.Play();
-            if (audio_manager.BGM_Music.clip != audio_manager.BGM_Title)
-            {
-                audio_manager.ChangeMusic(audio_manager.BGM_Title);
-
-            }
+            audio_manager.ChangeMusic(audio_manager.BGM_Title);
+            
 
         }
     }
-    private void Update()
-    {
-        
-       
-    }
-    // Update is called once per frame
-
+    
 }

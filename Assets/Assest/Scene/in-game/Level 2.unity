@@ -37212,7 +37212,7 @@ Tilemap:
       - {fileID: 8946990578885238788, guid: 8a25158d16030314a86ecf5bd0ec513b, type: 3}
       - {fileID: 5399000091609222918, guid: 8a25158d16030314a86ecf5bd0ec513b, type: 3}
       - {fileID: 5748798021889145674, guid: 8a25158d16030314a86ecf5bd0ec513b, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 18, y: -21, z: 0}
@@ -37562,7 +37562,7 @@ Tilemap:
       - {fileID: 8946990578885238788, guid: 8a25158d16030314a86ecf5bd0ec513b, type: 3}
       - {fileID: 5399000091609222918, guid: 8a25158d16030314a86ecf5bd0ec513b, type: 3}
       - {fileID: 5748798021889145674, guid: 8a25158d16030314a86ecf5bd0ec513b, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 53, y: -4, z: 0}
@@ -40289,10 +40289,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1819505798}
-    - target: {fileID: 6680229556228169952, guid: d85c4077eb84ea64cb7aaacedcd1ba32, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadOptionsScene
-      objectReference: {fileID: 0}
     - target: {fileID: 7692151804494949768, guid: d85c4077eb84ea64cb7aaacedcd1ba32, type: 3}
       propertyPath: m_Pivot.x
       value: 0

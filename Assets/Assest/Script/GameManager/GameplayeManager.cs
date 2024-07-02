@@ -9,15 +9,19 @@ using UnityEngine.UIElements;
 public class GameplayeManager : MonoBehaviour
 {
     private Scene scene;
+    [Header("Insert UI")]
     public TextMeshProUGUI text_time;
     public TextMeshProUGUI text_level;
-    
+
+
     public GameObject player;
     public GameObject ui_control;
+
+    [Header("Show/Hide UI")]
     public UnityEvent player_event;
     public UnityEvent player_event2;
 
-    public GameObject Music;
+    private GameObject Music;
     AudioManager audio_manager;
 
     // Use this for initialization

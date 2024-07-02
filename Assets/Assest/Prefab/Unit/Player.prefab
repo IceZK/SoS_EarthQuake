@@ -463,9 +463,10 @@ MonoBehaviour:
   b_interact: {fileID: 0}
   Conversation: {fileID: 0}
   CanTalk: 0
+  Key: 0
   Cam: {fileID: 0}
-  damage_Sfx: {fileID: 0}
-  damage_clip: {fileID: 0}
+  damage_Sfx: {fileID: 2769867223444005981}
+  damage_clip: {fileID: 8300000, guid: ed64c17e513692c4a852743e67f4c7e1, type: 3}
 --- !u!61 &9194784017730705517
 BoxCollider2D:
   m_ObjectHideFlags: 0

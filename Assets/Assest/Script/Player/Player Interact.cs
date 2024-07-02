@@ -9,14 +9,18 @@ public class PlayerInteract : MonoBehaviour
     public Button b_interact;
     public NPCConversation Conversation;
     public bool CanTalk = false;
-    
+
+    public bool Key = false;
+
     public GameObject Cam;
 
+    [Header("Sound SFX")]
     public AudioSource damage_Sfx;
     public AudioClip damage_clip;
+    
     public void Start()
     {
-        
+        damage_Sfx = GetComponent<AudioSource>();
     }
 
     public void Update()
@@ -55,6 +59,20 @@ public class PlayerInteract : MonoBehaviour
                 GameManager.timer -= 10f;
                 damage_Sfx.clip = damage_clip;
                 damage_Sfx.Play();
+            }
+
+            if(collision.gameObject.tag == "Key")
+            {
+                Key = true;
+            }
+
+            if (collision.gameObject.tag == "Door")
+            {
+                if(Key)
+                {
+                    Key = false;
+                    //Event
+                }
             }
           
             
