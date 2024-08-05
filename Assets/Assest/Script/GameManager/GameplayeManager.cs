@@ -27,23 +27,12 @@ public class GameplayeManager : MonoBehaviour
     // Use this for initialization
     private void Awake()
     {
-        player = GameObject.Find("Player");
-        
+        player = GameObject.Find("Player");       
         ui_control = GameObject.Find("Control-Panel");
-        
-
-
     }
     void Start()
-    {
-        
-        
-        
+    { 
         scene = SceneManager.GetActiveScene(); 
-
-
-        
-        
     }
 
     // Update is called once per frame
@@ -55,12 +44,7 @@ public class GameplayeManager : MonoBehaviour
         {
             audio_manager.ChangeMusic(audio_manager.BGM_Gameplay);
         }
-
-
-
         TimerCount(GameManager.timer);
-        
-        
         LevelCount(scene.name);
         GameOver1(GameManager.timer);
 
@@ -83,9 +67,6 @@ public class GameplayeManager : MonoBehaviour
         {
             ui_control.SetActive(true);
         }
-        
-       
-        
 
      }
     void GameOver1(float currenttime)
@@ -102,8 +83,6 @@ public class GameplayeManager : MonoBehaviour
             if (GameManager.is_dialog == false)
                 GameManager.timer -= Time.deltaTime;
         }
-            
-
 
         float minutes = Mathf.FloorToInt(currenttime / 60);
         float seconds = Mathf.FloorToInt(currenttime % 60);

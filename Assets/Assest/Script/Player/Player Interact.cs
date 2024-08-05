@@ -1,4 +1,6 @@
 using DialogueEditor;
+using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 public class PlayerInteract : MonoBehaviour
@@ -9,9 +11,11 @@ public class PlayerInteract : MonoBehaviour
     public Button b_interact;
     public NPCConversation Conversation;
 
-    [Header("Bool")]
+    [Header("varible")]
     public bool CanTalk = false;
     public bool Key = false;
+    public float time_damage = 1.0f;
+    private float lastDamageTime = 0.0f;
 
     [Header("Cam Shake")]
     public GameObject Cam;
@@ -23,6 +27,7 @@ public class PlayerInteract : MonoBehaviour
     public void Start()
     {
         damage_Sfx = GetComponent<AudioSource>();
+        
     }
 
     public void Update()
@@ -53,9 +58,14 @@ public class PlayerInteract : MonoBehaviour
             
             else if (collision.gameObject.tag == "Damage")
             {
-                GameManager.timer -= 10f;
-                damage_Sfx.clip = damage_clip;
-                damage_Sfx.Play();
+
+                if(Time.time - lastDamageTime>= 1.0f / time_damage)
+                {
+                    GameManager.timer -= 10f;
+                    damage_Sfx.clip = damage_clip;
+                    damage_Sfx.Play();
+                    lastDamageTime = Time.time;
+                }
             }
 
             if(collision.gameObject.tag == "Key")
@@ -103,5 +113,5 @@ public class PlayerInteract : MonoBehaviour
     }
     
 
-   
+
 }

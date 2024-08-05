@@ -18,16 +18,16 @@ EditorBuildSettings:
     path: Assets/Assest/Scene/Win or Lose/DEMO/Lose.unity
     guid: 63083b8bbf9d50a42bc87a2014933574
   - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 1.unity
+    path: Assets/Assest/Scene/in-game/1st Floor.unity
     guid: 30dc0f5e873a37f499d1419783eb5aa7
   - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 2.unity
+    path: Assets/Assest/Scene/in-game/2nd Floor.unity
     guid: 612e16c90a0096849910c9ff6a0a72ca
   - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 3.unity
+    path: Assets/Assest/Scene/in-game/3rd Floor.unity
     guid: 555d1fceebc730c4aa6ff6e21d69bc1f
   - enabled: 1
-    path: Assets/Assest/Scene/in-game/Level 4.unity
+    path: Assets/Assest/Scene/in-game/4th Floor.unity
     guid: cb3c53e8fee9bdd4a9208d9815a32d6c
   - enabled: 1
     path: Assets/Assest/Scene/in-game/Pause.unity
